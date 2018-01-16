@@ -21,7 +21,8 @@ public class ApplicationRunner {
         ModularCarProcessor modularCarProcessor = new ModularCarProcessor(cars);
         List<ModularCar> fileredList = modularCarProcessor.processList("Ford", "Mercedes");
 
-        ModularCSVWriter csvWriter = new ModularCSVWriter(new File("src/main/resources/cars.csv").getAbsolutePath());
+        ModularCSVWriter csvWriter = new ModularCSVWriter(new File("cars.csv").getAbsolutePath());
         csvWriter.writeToCSV(fileredList);
     }
 }
+
